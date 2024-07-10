@@ -74,6 +74,14 @@ RUN git clone https://github.com/PAIR-code/facets && \
 RUN MPLBACKEND=Agg python -c "import matplotlib.pyplot" && \
     fix-permissions "/home/${NB_USER}"
 
+RUN pip install \
+    'jupyter-ai' \
+    'langchain_mistralai' \
+    'langchain_openai' \
+    'langchain_cohere' && \
+    fix-permissions "/home/${NB_USER}"
+
+
 USER ${NB_UID}
 
 WORKDIR "${HOME}"
