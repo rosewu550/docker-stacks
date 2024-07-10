@@ -75,14 +75,14 @@ repos:
       - id: requirements-txt-fixer
       - id: trailing-whitespace
 
-  # Lint: Dockerfile
+  # Lint: dockerfile
   - repo: https://github.com/hadolint/hadolint
     rev: v2.13.0-beta
     hooks:
       - id: hadolint-docker
         entry: hadolint/hadolint:v2.12.1-beta hadolint
 
-  # Lint: Dockerfile
+  # Lint: dockerfile
   # We're linting .dockerfile files as well
   - repo: https://github.com/hadolint/hadolint
     rev: v2.13.0-beta

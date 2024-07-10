@@ -202,7 +202,7 @@ else
     # Attempt to ensure the user uid we currently run as has a named entry in
     # the /etc/passwd file, as it avoids software crashing on hard assumptions
     # on such entry. Writing to the /etc/passwd was allowed for the root group
-    # from the Dockerfile during the build.
+    # from the dockerfile during the build.
     #
     # ref: https://github.com/jupyter/docker-stacks/issues/552
     if ! whoami &> /dev/null; then

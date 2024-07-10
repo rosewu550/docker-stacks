@@ -79,9 +79,9 @@ You'll need to manually set up a cron job to run the renewal steps at the moment
 ### My pip/conda/apt-get installs disappear every time I restart the container. Can I make them permanent?
 
 ```bash
-# add your pip, conda, apt-get, etc. permanent features to the Dockerfile where
-# indicated by the comments in the Dockerfile
-vi Dockerfile
+# add your pip, conda, apt-get, etc. permanent features to the dockerfile where
+# indicated by the comments in the dockerfile
+vi dockerfile
 make image
 make notebook
 ```
